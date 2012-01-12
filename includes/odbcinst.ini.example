@@ -1,0 +1,2 @@
+[FreeTDS]
+Driver = /usr/local/lib/libtdsodbc.so

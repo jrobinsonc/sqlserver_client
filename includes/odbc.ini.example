@@ -1,0 +1,9 @@
+[DNS-NAME-1] 
+Driver = FreeTDS
+Description = <Server description>
+Trace = No 
+Server = <Server IP>
+Port = 1433 
+Database = <Database to use>
+LogonID = <User for the database>
+pwd = <Password for the database>

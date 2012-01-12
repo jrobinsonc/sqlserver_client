@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #222;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+#container {
+}
+
+#main {
+    overflow: hidden;
+}
+
+#explorer, #result {
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#explorer {
+    width: 310px;
+    background-color: wheat;
+    padding: 10px;
+}
+
+#explorer-filter input[type=text] {
+    padding: 2px;
+    font-family: monospace;
+}
+
+#explorer-filter {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#explorer-tables {
+    padding-top: 5px;
+    overflow: auto;
+}
+
+#explorer-tables a.table {
+    display: block;
+    line-height: 20px;
+    padding: 2px;
+}
+
+#explorer a.table:hover {
+    background-color: burlywood;
+}
+
+#explorer a.table.selected {
+    background-color: burlywood;
+}
+
+#result {
+    padding: 10px;
+}
+
+#result-table {
+    overflow: auto;
+    width: 200px;
+    height:200px;
+}
+
+#result-table table,
+#result-table table th,
+#result-table table td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+#result-table table th{
+    padding: 5px;
+}
+
+#result-table table td {
+    padding: 2px;
+}
+
+#result-table table th {
+    background-color: #f6f6f6;
+}
+
+#result-table table tr:nth-child(even) td {
+    background-color: #f6f6f6;
+}
+
+#result-table table tr:hover td {
+    background-color: powderblue;
+}
+
+#frm-sql {
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+#frm-sql textarea {
+    height: 150px;
+    width: 100%;
+}
+
+#frm-sql .bottom-panel {
+    overflow: hidden;
+    margin: 5px 0 0 0;
+}
+
+#frm-sql .bottom-panel button {
+    padding: 5px;
+    float: right;
+}

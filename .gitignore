@@ -1,0 +1,4 @@
+.DS_Store
+nbproject/*
+includes/odbc.ini
+includes/odbcinst.ini
