@@ -49,17 +49,26 @@ a {
     overflow: auto;
 }
 
-#explorer-tables a.table {
+#explorer-tables a.db-object {
     display: block;
     line-height: 20px;
-    padding: 2px;
+    padding: 2px 2px 2px 20px;
+    background: transparent none no-repeat scroll 0 4px;
 }
 
-#explorer a.table:hover {
+#explorer-tables a.db-object.table {
+    background-image: url('../images/table-icon.png');
+}
+
+#explorer-tables a.db-object.view {
+    background-image: url('../images/view-icon.png');
+}
+
+#explorer a.db-object:hover {
     background-color: burlywood;
 }
 
-#explorer a.table.selected {
+#explorer a.db-object.selected {
     background-color: burlywood;
 }
 

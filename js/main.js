@@ -72,7 +72,7 @@ $(function(){
     }, function(data){
         $explorer_tables.html(data);
 					
-        $$explorer_tables_list = $explorer_tables.find('a.table');
+        $$explorer_tables_list = $explorer_tables.find('a.db-object');
 					
         $$explorer_tables_list.dblclick(function(){
             $sql.val('SELECT TOP 100 * FROM ' + $(this).text());

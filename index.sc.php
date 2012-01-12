@@ -106,11 +106,12 @@ if (isset($_POST['fnctodo']))
 
 			while (odbc_fetch_row($result))
 			{
-				if(odbc_result($result,"TABLE_TYPE") == "TABLE")
+				if(in_array(odbc_result($result,"TABLE_TYPE"), array('TABLE', 'VIEW')))
 				{
 					$table_name = odbc_result($result,"TABLE_NAME");
+                    $table_type = odbc_result($result,"TABLE_TYPE");
                     
-					echo sprintf('<a href="javascript:;" class="table" rel="%s">%s</a>', strtolower($table_name), $table_name);
+					echo sprintf('<a href="javascript:;" class="%s db-object" rel="%s">%s</a>', strtolower($table_type), strtolower($table_name), $table_name);
 				}
 			}
 
